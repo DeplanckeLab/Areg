@@ -1,0 +1,10 @@
+osteo: Runx2, Sp7, Alpl, Bglap, Col1a1, Ogn
+chondro: Sox5, Sox6, Col10a1, Col11a1, Acan, Comp
+adipo: Pparg, Cidec, Adipoq, Cd36, Fabp4, Aoc3
+endo: Pecam1, Vcam1, Mcam, Vwf, Cdh5, Thbd
+hemato: Ptprc, Gata2, Thy1, Spi1, Kit, Slamf1
+myo: Myf4, Myod, Myf5, Acta2, Tnnt3, Mylpf
+stem: Cd34, Ly6a, Cd44, Sdc1, Slc3a2, Cd24a
+house: Rplp2, Ubc, Rps17a, Rps27a, Ubb, Rps5, Rpl27a
+immuno: Ifng, Il10, Il1b, Il2, Il6, Tnf 
+brite: Vefga, Erbb3
