@@ -37,7 +37,8 @@ genesPerCell=apply(countmatrix,2,function(x) length(which(x>0)))
 okmatrix=countmatrix[apply(countmatrix,1,function(x) sum(x))>=10, which(genesPerCell>=2)]
 umiPerCell=apply(countmatrix,2,function(x) sum(x))
 genesPerCell=apply(countmatrix,2,function(x) length(which(x>0)))
-okmatrix=countmatrix[,which(genesPerCell>=genescut)]; okmatrix=countmatrix[,which(genesPerCell<=10000)]
+# hard filtering if necessary?
+# okmatrix=countmatrix[,which(genesPerCell>=genescut)]; okmatrix=countmatrix[,which(genesPerCell<=10000)]
 okmatrix=okmatrix[apply(okmatrix,1,function(x) sum(x))>=10,]; okmatrix=okmatrix[apply(okmatrix,1,function(x) length(which(x>0)))>=2,]
 genesPerCell=apply(okmatrix,2,function(x) length(which(x>0)))
 dim(countmatrix); dim(okmatrix) #countmatrix 27998  1869 # okmatrix 13597  1869
@@ -50,7 +51,7 @@ libsize.drop <- isOutlier(sce$total_counts, nmads=3, type="lower", log=TRUE) #6
 feature.drop <- isOutlier(sce$total_features, nmads=3, type="lower", log=TRUE) #38
 sce <- sce[,!(libsize.drop | feature.drop )]
 data.frame(ByLibSize=sum(libsize.drop), ByFeature=sum(feature.drop), Remaining=ncol(sce))
-ave.counts <- rowMeans(counts(sce)); keep <- ave.counts >= 1
+ave.counts <- rowMeans(counts(sce)); # keep <- ave.counts >= 1 #additional filtering?
 hist(log10(ave.counts), breaks=100, main="", col="grey80", xlab=expression(Log[10]~"average count"))
 abline(v=log10(1), col="blue", lwd=2, lty=2)
 plotQC(sce, type = "highest-expression", n=50) 
