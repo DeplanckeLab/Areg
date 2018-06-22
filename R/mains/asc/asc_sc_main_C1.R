@@ -43,7 +43,7 @@ names(mynames)=gsub("[.][.]","",paste(gsub("BD","D",gsub("_",".",substr(mynames,
 # path to the gsnap/htseq results
 starpath="adipo/ETH/mapped/asc/STAR/"
 #readSTARHTSeqASC(starpath,"cut",mynames,names(mynames),mydate) 
-load(paste(outpath,"SSAll-STARHTSeqTags.-",mydate,".RData",sep="")) #htseqgenes and htseqexons #SSAll-STARHTSeqTags.-140717.RData
+load(paste(outpath,"SSAll-STARHTSeqTags.-",mydate,".RData",sep="")) #htseqgenes and htseqexons #SSAll-STARHTSeqTags.-161121.RData
 
 #countmatrix=mmseqcounts; myname=paste(myname,"mmseq",sep=".")
 countmatrix=htseqgenes; myname=paste(myname,"htseq",sep=".")
