@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>R/mains/asc/asc_sc_main_10x.R</string>
+	<string>R/mains/asc/asc_sc_main_C1.R</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -115,15 +115,15 @@
 									<key>filename</key>
 									<string>R/mains/asc/asc_sc_main_10x.R</string>
 									<key>lastUsed</key>
-									<date>2018-05-28T11:47:11Z</date>
-									<key>selected</key>
-									<true/>
+									<date>2018-06-22T09:50:43Z</date>
 								</dict>
 								<dict>
 									<key>filename</key>
 									<string>R/mains/asc/asc_sc_main_C1.R</string>
 									<key>lastUsed</key>
-									<date>2018-04-17T14:31:04Z</date>
+									<date>2018-06-22T09:50:43Z</date>
+									<key>selected</key>
+									<true/>
 								</dict>
 							</array>
 							<key>expanded</key>
@@ -284,7 +284,7 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>74</integer>
+				<integer>61</integer>
 				<key>line</key>
 				<integer>42</integer>
 			</dict>
@@ -300,12 +300,28 @@
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>799</integer>
+				<integer>86</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>42</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>74</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>86</integer>
+			</dict>
 		</dict>
 		<key>R/utils/plot-util.R</key>
 		<dict>
@@ -523,6 +539,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{1590, -163}, {991, 935}}</string>
+	<string>{{1700, -219}, {991, 935}}</string>
 </dict>
 </plist>
